@@ -1,0 +1,127 @@
+/* Start Basics */
+
+/* Start Variables */
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+
+/* End Variables */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--very-light-gray);
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 375px;
+    }
+}
+
+/* End Basics */
+
+.main .container {
+    margin: 25px 80px;
+    text-align: center;
+}
+
+.main .main-heading .heading-p {
+    font-weight: 200;
+    font-size: 31px;
+    color: var(--grayish-blue);
+    margin-bottom: -10px;
+}
+
+.main .main-heading h1 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.main .main-heading .description-p {
+    color: var(--grayish-blue);
+    max-width: 400px;
+    margin: 0 auto 25px;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.main .boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.main .boxes .two {
+    margin-bottom: 20px;
+}
+
+.main .boxes .box {
+    background-color: white;
+    border-radius: 5px;
+    border-top-width: 4px;
+    border-top-style: solid;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 10px 15px 0 #dfdddd;
+}
+
+.main .boxes .one {
+    border-top-color: var(--cyan);
+}
+
+.main .boxes .two {
+    border-top-color: var(--red);
+}
+
+.main .boxes .three {
+    border-top-color: var(--orange);
+}
+
+.main .boxes .four {
+    border-top-color: var(--blue);
+}
+
+.main .boxes .box .text {
+    text-align: left;
+}
+
+.main .boxes .box .text h4 {
+    font-size: 20px;
+    margin: 0 auto -5px;
+}
+
+.main .boxes .box .text p {
+    color: var(--grayish-blue);
+    line-height: 1.6;
+    font-size: 13px;
+}
+
+.main .boxes .box .image {
+    text-align: right;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    transform: translateY(100px);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
