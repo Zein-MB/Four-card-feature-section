@@ -28,7 +28,34 @@ body {
 @media (max-width: 768px) {
     .container {
         width: 375px;
+        padding: 1.5em 3em !important;
+        margin: 0 !important;
     }
+
+    .main-heading .heading-p {
+        margin-bottom: -20px !important;
+    }
+
+    .main-heading .heading-p,
+    .main-heading h1 {
+        font-size: 23px !important;
+    }
+
+    .main-heading .description-p {
+        width: 100% !important;
+        max-width: none !important;
+        font-size: 14px !important;
+    }
+
+    .container .boxes {
+        flex-direction: column;
+    }
+
+    .container .boxes .box .text p {
+        max-width: none !important;
+        width: 100%;
+    }
+
 }
 
 /* End Basics */
@@ -42,7 +69,7 @@ body {
     font-weight: 200;
     font-size: 31px;
     color: var(--grayish-blue);
-    margin-bottom: -10px;
+    margin-bottom: -25px;
 }
 
 .main .main-heading h1 {
@@ -53,9 +80,9 @@ body {
 
 .main .main-heading .description-p {
     color: var(--grayish-blue);
-    max-width: 400px;
+    max-width: 30vw;
     margin: 0 auto 25px;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.6;
 }
 
@@ -63,7 +90,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
+    margin-top: 4em;
 }
 
 .main .boxes .two {
@@ -76,8 +104,8 @@ body {
     border-top-width: 4px;
     border-top-style: solid;
     width: 300px;
-    padding: 20px;
-    box-shadow: 0 10px 15px 0 #dfdddd;
+    padding: 25px;
+    box-shadow: 0 10px 15px 0 hsl(212deg 66% 40% / 19%);
 }
 
 .main .boxes .one {
@@ -107,12 +135,14 @@ body {
 
 .main .boxes .box .text p {
     color: var(--grayish-blue);
-    line-height: 1.6;
-    font-size: 13px;
+    line-height: 1.7;
+    font-size: 11px;
+    max-width: 20vw;
 }
 
 .main .boxes .box .image {
     text-align: right;
+    padding-top: 1.5em;
 }
 
 .attribution {
